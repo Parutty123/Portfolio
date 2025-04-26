@@ -1,0 +1,325 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #ecf0f1; /* Light background color */
+}
+
+/* Header styling */
+header {
+  background-color: #2c3e50; /* Dark background color for header */
+  padding: 20px 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+/* Navigation styling */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+/* Link styling */
+nav a {
+  position: relative;
+  color: #ecf0f1;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+  width: 0%;
+  height: 2px;
+  background-color: #3498db;
+  transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+
+
+
+
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #ecf0f1; /* Light background color */
+}
+
+
+/* Content section where text and image will appear side by side */
+
+.content {
+  display: flex; /* Flexbox to align items horizontally */
+  justify-content: space-between; /* Add space between text and image */
+  align-items: center; /* Center items vertically */
+  padding: 100px;
+  position: relative;
+  padding: 40px;
+  background-color: #4d5b74;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  margin: 40px auto;
+  max-width: 1000px;
+  height: 500px;
+}
+
+
+
+
+
+/* Hover effect for inner box */
+.content .inner-box:hover {
+  box-shadow: 0 4px 20px rgba(52, 152, 219, 0.3); /* Blue glow on hover */
+  transform: translateY(-5px); /* Make the inner box pop up a bit */
+}
+
+/* Text content styling */
+.text-content {
+  width: 100%; /* Takes up 50% of the space */
+  padding-right: 10px;
+ 
+  
+
+}
+.text-content h1 {
+color: #ffffff;
+font-size: 50px;
+padding-left: 90px;
+}
+.text-content p {
+  font-size: 20px;
+  color : #ffffff;
+  padding-right:50px;
+padding-left: 50px;
+ 
+}
+
+
+
+/* Image styling on the right */
+.image-container {
+  padding-right: 100px;
+ 
+
+}
+
+.image-container img {
+  width: 300px; /* Set the width to a fixed size (e.g., 200px) */
+  height: 300px; /* Set height equal to width to make it circular */
+  object-fit: cover; /* Ensures the image fills the circular container without stretching */
+  border-radius: 50%; /* Make the image circular */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Adds a shadow effect */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+
+}
+
+
+/* Hover effect for the image */
+.image-container img:hover {
+  transform: scale(1.1); /* Slightly enlarge the image */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* Larger shadow on hover */
+  border-radius: 50%; /* Maintain the circular shape on hover */
+}
+
+
+.about-me h1{
+font-size: 40px;
+padding-left: 200px;
+padding-top: 50px;
+
+}
+.about-me p{
+font-size: 18px;
+text-align: center;
+padding-left: 50px;
+padding-right: 50px;
+font-family:'Times New Roman', Times, serif;
+}
+
+
+.about-box {
+  width: 70%;
+  height: 500px;
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 10px solid  #4d5b74;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.steyp {
+background-color: #4d5b74;
+color: #ffffff;
+height: 500px;
+display: flex;
+  justify-content: space-between;
+ 
+}
+
+.steyp h1{
+  padding-top: 100px;
+ color: #ffffff;
+padding-left: 230px;
+padding-right: 200px;
+ font-size: 40px;
+
+}
+.steyp p{
+  color: #ffffff;
+  font-size: 20px;
+ padding-left: 150px;
+ padding-right: 150px;
+ 
+ }
+
+ .image-container2 {
+  padding-right: 180px;
+
+
+}
+
+.image-container2 img {
+  width: 300px; /* Set the width to a fixed size (e.g., 200px) */
+  height: 450px; /* Set height equal to width to make it circular */
+ border-radius: 8%; /* Make the image circular */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Adds a shadow effect */
+ padding-top: 20px;
+
+}
+
+
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply animation to headings and paragraphs */
+.text-content h1 {
+  color: white;
+  font-size: 50px;
+  opacity: 0; /* Initially hidden */
+  animation: fadeInUp 2s ease-out forwards; /* Fade-in-up effect */
+}
+
+.text-content p {
+  color: white;
+  font-size: 20px;
+  opacity: 0; /* Initially hidden */
+  animation: fadeInUp 2s ease-out forwards 0.5s; /* Fade-in-up effect with delay */
+}
+
+.text-content p {
+  font-size: 20px;
+  color: white;
+  transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition for scale and color change */
+}
+
+/* Apply the hover effect */
+.text-content p:hover {
+  transform: scale(1.1); /* Enlarge the text on hover */
+  color:blue
+}
+
+.contact{
+  color: #053454;
+  font-size: 20px;
+  padding-left: 600px;
+  border: 10px solid  #7c7c7f;
+  border-radius: 400px;
+  box-shadow: 0 15px 78px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 1024px) {
+  .content, .steyp {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .text-content, .image-container, .image-container2 {
+    width: 100%;
+    padding: 0;
+  }
+
+  .image-container img,
+  .image-container2 img {
+    width: 80%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  .text-content h1,
+  .steyp h1 {
+    font-size: 36px;
+    padding: 20px;
+  }
+
+  .text-content p,
+  .steyp p {
+    font-size: 18px;
+    padding: 10px 20px;
+  }
+
+  .about-me h1 {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .about-box {
+    width: 90%;
+    height: auto;
+  }
+
+  .contact {
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav a {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+
+  .text-content h1,
+  .steyp h1 {
+    font-size: 28px;
+  }
+
+  .text-content p,
+  .steyp p {
+    font-size: 16px;
+  }
+}
+
